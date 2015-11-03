@@ -1,0 +1,97 @@
+{
+    "basics": {
+        "name": "Greyson Griffin",
+        "label": "Senior Software Engineer",
+        "picture": "http://i.imgur.com/LHoeSfp.jpg",
+        "email": "donggriffin@gmail.com",
+        "phone": "(479) 414-9059",
+        "website": "http://greysongriffin.com",
+        "location": {
+            "address": "445 Artisan Way, #214",
+            "postalCode": "MA 02145",
+            "city": "Boston",
+            "countryCode": "US",
+            "region": "massachusetts"
+        },
+        "profiles": [{
+            "network": "GitHub",
+            "username": "dggriffin",
+            "url": "https://github.com/dggriffin"
+        }]
+    },
+    "work": [{
+        "company": "Vistaprint",
+        "position": "Senior Software Engineer",
+        "website": "http://vistaprint.com",
+        "highlights": [
+            "Full-stack developer on the Studio, Design and Content team",
+            "Developed and maintained Vistaprint's design editor experience"
+        ]
+    }, {
+        "company": "J.B. Hunt",
+        "position": "Programming Specialist",
+        "website": "http://jbhunt.com",
+        "highlights": [
+            "Full-stack developer for Client Administration web-application using DB2/Hibernate/Java/Spring/ExtJS stack.",
+            "Converted hazardous shipment processing from mainframe module to RESTful web-service.",
+            "Developed user-driven rule configuration screens to replace manual SQL for existing business users."
+
+        ]
+    }, {
+        "company": "J.B. Hunt",
+        "position": "Programming Analyst",
+        "website": "http://jbhunt.com",
+        "highlights": [
+            "Full-stack developer for Client Administration web-application using DB2/Hibernate/Java/Spring/ExtJS stack.",
+            "Implemented and designed ExtJS front-end screens for business rule manipulation, invoice and billing audits.",
+            "Created custom components for exporting customized data grids to excel files, using JSON.",
+            "Cut page loads times by 80% for several screens by creating custom local store pagination for data display.",
+            "Implemented Spring-MVC for RESTful client-server architecture."
+
+        ]
+    }, {
+        "company": "J.B. Hunt",
+        "position": "Programmer",
+        "website": "http://jbhunt.com",
+        "highlights": [
+            "Completed total re-write of heavily coupled COBOL/Apache Struts web-application to ICEFaces with Spring and NamedJDBC.",
+            "Lines of Code Reduced from 31,262 to 6,213, Sonar complexity from 3,259, to 965. Sonar Critical Violations from 2,084 to 332.",
+            "Optimized dozens of SQL queries to reduce page load times by up to 50%."
+
+        ]
+    }],
+    "education": [{
+        "institution": "University of Arkansas",
+        "area": "Computer Engineering with Minor in Mathematics",
+        "studyType": "Bachelor",
+        "startDate": "2008-08-01",
+        "endDate": "2013-05-10",
+        "gpa": "3.5",
+        "courses": [
+            "Operating Systems",
+            "Database Management",
+            "Algorithms",
+            "Artificial Intelligence",
+            "Computer Architecture",
+            "Computer Graphics",
+            "Computer Networking",
+            "Differential Equations",
+            "Calculus III"
+        ]
+    }],
+    "skills": [{
+        "name": "Web Development",
+        "level": "Master",
+        "keywords": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Java",
+            "SQL"
+        ]
+    }],
+    "languages": [{
+        "language": "English",
+        "fluency": "Native speaker"
+    }]
+}
