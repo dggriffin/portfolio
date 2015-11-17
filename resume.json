@@ -2,10 +2,11 @@
     "basics": {
         "name": "Greyson Griffin",
         "label": "Senior Software Engineer",
-        "picture": "http://i.imgur.com/LHoeSfp.jpg",
+        "picture": "http://i.imgur.com/DeTPvmr.png",
         "email": "donggriffin@gmail.com",
         "phone": "(479) 414-9059",
         "website": "http://greysongriffin.com",
+        "summary": "I'm enthralled by the professional world of software development and design. Software development is the culmination of ideas, process, and execution 'for people, and by people.' The initial undertaking of a design problem, and its final, carefully calibrated solution will always be a practice I enjoy. ",
         "location": {
             "address": "445 Artisan Way, #214",
             "postalCode": "MA 02145",
@@ -17,12 +18,23 @@
             "network": "GitHub",
             "username": "dggriffin",
             "url": "https://github.com/dggriffin"
+        },
+        {
+            "network": "LinkedIn",
+            "username": "dggriffin",
+            "url": "https://www.linkedin.com/pub/greyson-griffin/65/60a/29"
+        },
+        {
+            "network": "Twitter",
+            "username": "dggriffin",
+            "url": "https://twitter.com/GriffinGreyson"
         }]
     },
     "work": [{
         "company": "Vistaprint",
         "position": "Senior Software Engineer",
         "website": "http://vistaprint.com",
+                "startDate": "2015-07-13",
         "highlights": [
             "Full-stack developer on the Studio, Design and Content team",
             "Developed and maintained Vistaprint's design editor experience"
@@ -31,6 +43,8 @@
         "company": "J.B. Hunt",
         "position": "Programming Specialist",
         "website": "http://jbhunt.com",
+                "startDate": "2015-05-10",
+        "endDate": "2015-07-13",
         "highlights": [
             "Full-stack developer for Client Administration web-application using DB2/Hibernate/Java/Spring/ExtJS stack.",
             "Converted hazardous shipment processing from mainframe module to RESTful web-service.",
@@ -41,6 +55,8 @@
         "company": "J.B. Hunt",
         "position": "Programming Analyst",
         "website": "http://jbhunt.com",
+                "startDate": "2014-05-10",
+        "endDate": "2015-05-10",
         "highlights": [
             "Full-stack developer for Client Administration web-application using DB2/Hibernate/Java/Spring/ExtJS stack.",
             "Implemented and designed ExtJS front-end screens for business rule manipulation, invoice and billing audits.",
@@ -53,6 +69,8 @@
         "company": "J.B. Hunt",
         "position": "Programmer",
         "website": "http://jbhunt.com",
+                "startDate": "2013-05-10",
+        "endDate": "2014-05-10",
         "highlights": [
             "Completed total re-write of heavily coupled COBOL/Apache Struts web-application to ICEFaces with Spring and NamedJDBC.",
             "Lines of Code Reduced from 31,262 to 6,213, Sonar complexity from 3,259, to 965. Sonar Critical Violations from 2,084 to 332.",
@@ -80,14 +98,38 @@
         ]
     }],
     "skills": [{
-        "name": "Web Development",
-        "level": "Master",
+        "name": "Languages",
         "keywords": [
-            "HTML",
-            "CSS",
             "Javascript",
             "Java",
-            "SQL"
+            "C++",
+            "Ruby",
+            "PHP",
+            "HTML5",
+            "CSS3"
+        ]
+    },{
+        "name": "Frameworks",
+        "keywords": [
+            "Backbone",
+            "Meteor",
+            "React",
+            "jQuery",
+            "ExtJS",
+            "ImpactJS",
+            "Node",
+            "Spring",
+            "Hibernate"
+        ]
+    },
+    {
+        "name": "Databases",
+        "keywords": [
+            "MongoDB",
+            "MySql",
+            "DB2",
+            "Oracle",
+            "MSSQL"
         ]
     }],
     "languages": [{
