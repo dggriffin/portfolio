@@ -34,7 +34,7 @@
 
         <ul class="pure-menu-list">
             <li class="pure-menu-item"><a href="" class="home pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="" class="about pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="" class="about pure-menu-link">Projects</a></li>
             <li class="pure-menu-item"><a href="" class="skills pure-menu-link">Skills</a></li>
             <li class="pure-menu-item"><a href="" class="resume pure-menu-link">Resume</a></li>
         </ul>
@@ -57,46 +57,32 @@
 
 <div class="about content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Developer by day...also developer by night.</h2>
+        <h2 class="content-head is-center">projects</h2>
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <div class="project-list">
+            {{#each repos}}
+                <div class="project card" style="background-image:url({{bg}})">
+                    <a href={{html_url}} style="project-link"><h2 class="project-title">{{name}}</h2></a>
+                    <span class="project-description"> {{description}} </span>
+                    {{#if this.events}}
 
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Gets Started Quickly
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile"></i>
-                    Passioniate
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    Flexible
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    Plays Nice With Others
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
+                    <div class="project-recent">
+                        <h4  class="recent-title">Recent Activity:</h4>     
+                        {{#each this.events}}
+                            {{#if this.payload.commits}}
+                            <div class="activity-item">
+                            {{#each this.payload.commits}}
+          
+                                <a href="https://github.com/{{../repo.name}}/commit/{{sha}}">{{author.name}} - {{message}}</a>
+      
+                            {{/each}}
+                            </div>
+                            {{/if}}
+                        {{/each}}
+                    </div>
+                    {{/if}}
+                </div>
+            {{/each}}
         </div>
     </div>
 

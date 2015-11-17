@@ -184,6 +184,7 @@ a.pure-button-primary {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	margin: 2em 0 1em;
+	width:100%;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -470,6 +471,8 @@ a.pure-button-primary {
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
+  width: 400px;
+  height: 400px;
 }
 .card span.card-title {
     color: #fff;
@@ -520,4 +523,51 @@ a.pure-button-primary {
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
+}
+
+.project-list{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.project {
+	color: #FFF;
+	font-family: 'Roboto'
+}
+
+.project-description{
+	margin: 20px;
+}
+
+.project-title{
+	color:#FFF;
+	margin: 20px;
+	font-weight: 200;
+}
+
+.project-recent{
+	flex: 1;
+	display:flex;
+	flex-flow: column;
+	justify-content: end;
+}
+
+.recent-title{
+	color:#FFF;
+	font-weight: 200;
+	margin: 20px;
+}
+
+.activity-item{
+	display: block;
+	margin: 10px 20px 10px 20px;
+	opacity: .6;
+	border-bottom: .1em dashed #FFF;
+	a {
+		color: #FFF;
+	}
+	a:hover{
+		color: lightcyan;
+	}
 }
