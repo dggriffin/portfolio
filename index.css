@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+  padding-left: 0.5em;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.heroImage {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./images/patternfun.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  color: white;
+  font-size: 2em;
+  font-weight: 100;
+  -webkit-filter: blur(0.8px);
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.buzz_wrapper{
+  text-align: center;
+  width:100%;
+  padding:100px;
+}
+
+.buzz_wrapper span{
+  -webkit-filter: blur(1px);
+  font-size:80px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrapper span:nth-child(1){
+  color: white;
+  -webkit-filter: blur(2px);
+}
+
+.buzz_wrapper span{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+
+@-webkit-keyframes blur {
+  0%   { -webkit-filter: blur(1px); opacity:0.8;}
+  50% { -webkit-filter: blur(1px); opacity:1; }
+  100%{ -webkit-filter: blur(1px); opacity:0.8; }
+}
+@-webkit-keyframes jerk {
+  50% { left:1px; }
+  51% { left:0; }
+}
+@-webkit-keyframes jerkup {
+  50% { top:1px; }
+  51% { top:0; }
+}
+
+.buzz_wrapper span:nth-child(3){
+  -webkit-animation: jerkblue 1s infinite;
+}
+@-webkit-keyframes jerkblue {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:10px; }
+}
+.buzz_wrapper span:nth-child(2){
+  -webkit-animation: jerkgreen 1s infinite;
+}
+@-webkit-keyframes jerkgreen {
+  0% { left:0; }
+  30% { left:0; }
+  31% { left:-10px; }
+  32% { left:0; }
+  98% { left:0; }
+  100% { left:-10px; }
+}
+
+.buzz_wrapper .text{
+  -webkit-animation: jerkwhole 5s infinite;
+  position:relative;
+}
+@-webkit-keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+
+.projects {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./images/palmparty.png');
+  background-size: cover;
+  background-position: bottom;;
+  background-attachment: fixed;
+}

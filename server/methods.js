@@ -1,1 +1,0 @@
-  return Meteor.methods({});
